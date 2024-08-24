@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+  </head>
+  <body>
+    <h1>jQuery Mouse Events</h1>
+
+    <div id="box" class="test">
+      <h2>Test Box</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
+        molestiae!
+      </p>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#box").click(function () {
+          // $("#box").css("background-color", "green");
+          var a = $("#box").html();
+          console.log(a);
+        });
+
+        $("#box").dblclick(function () {
+          $("#box").css("background-color", "orange");
+        });
+
+        $("#box").contextmenu(function () {
+          $("#box").css("background-color", "blue");
+        });
+
+        $("#box").mouseenter(function () {
+          $("#box").css("background-color", "tan");
+        });
+
+        $("#box").mouseleave(function () {
+          $("#box").css("background-color", "purple");
+        });
+      });
+    </script>
+  </body>
+</html>

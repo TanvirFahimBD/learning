@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        background: lightgreen;
+        padding: 10px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery ReplaceWith ReplaceAll</h1>
+
+    <div id="box">
+      <h2>Test Box</h2>
+      <p>
+        Lorem ipsum <span> dolor sit </span>, amet cawd cumque optio ipsum amet?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, ipsa.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, ipsa.
+      </p>
+    </div>
+    <button id="replaceBtn">replace</button>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#replaceBtn").click(function () {
+          // $("#box p:first").replaceWith("<h2>Tanvir</h2>");
+          $("<h2>Tanvir</h2>").replaceAll("#box p");
+        });
+      });
+    </script>
+  </body>
+</html>

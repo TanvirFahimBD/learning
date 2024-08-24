@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        background: lightgreen;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #000;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery eventWhich Property</h1>
+
+    <div id="box"></div>
+    <br />
+    <input type="text" id="inputbox" />
+    <br />
+    <h2></h2>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#box").on("mouseover mouseout mousedown", function (event) {
+          $("h2").html(event.type + " : " + event.which);
+        });
+
+        $("#inputbox").on("keydown", function (event) {
+          $("h2").html(event.type + " : " + event.which);
+        });
+      });
+    </script>
+  </body>
+</html>

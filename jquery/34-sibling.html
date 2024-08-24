@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        background: lightgreen;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery sibling methods</h1>
+
+    <div id="main-outer">
+      <h2>Main Outer</h2>
+      <ul id="outer">
+        <h2 class="test">Outer</h2>
+        <div id="inner">
+          <h2 id="child-head">Inner</h2>
+          <div>A</div>
+          <div class="test">B</div>
+          <div id="child-C">C</div>
+          <div>D</div>
+        </div>
+      </ul>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#child-C").prevUntil("#inner").css("background", "pink");
+      });
+    </script>
+  </body>
+</html>

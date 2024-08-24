@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        padding: 10px;
+        border: 1px solid red;
+      }
+      .first {
+        background: tan;
+      }
+      .second {
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery AddClass RemoveClass</h1>
+
+    <div id="box">
+      <h2>Test Box</h2>
+      <p>
+        Lorem ipsum <span> dolor sit </span>, amet cawd cumque optio ipsum amet?
+      </p>
+    </div>
+    <button id="addbutton">add button</button>
+    <button id="removebutton">remove button</button>
+    <button id="togglebutton">toggle button</button>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#addbutton").click(function () {
+          $("#box, h1").addClass("first second");
+        });
+
+        $("#removebutton").click(function () {
+          $("#box").removeClass("second");
+        });
+
+        $("#togglebutton").click(function () {
+          $("#box").toggleClass("second");
+        });
+      });
+    </script>
+  </body>
+</html>

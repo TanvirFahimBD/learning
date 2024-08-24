@@ -1,0 +1,1 @@
+Wow! New file2 create in golang

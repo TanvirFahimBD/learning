@@ -1,0 +1,15 @@
+:root {
+    --primary-color: red;
+}
+
+body {
+    --primary-color: blue;
+}
+
+div {
+    --primary-color: green;
+}
+
+p {
+    --primary-color: inherit;
+}

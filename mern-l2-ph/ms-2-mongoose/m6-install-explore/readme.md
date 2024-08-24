@@ -1,0 +1,73 @@
+- **6-1: Introduction to Mongoose**
+  - ODM - Object data modeling library of MongoDB.
+  - mongoose → mongodb wrapper
+  - Give higher level abstraction
+  - Schema, model, relationships with MongoDB
+  - Have structure or follow mapping
+  - Create object & check type, validation
+  - object → ODM → mongoose → mongoDb driver → mongodb
+  - Features - Schema definition, Model creation, data validation, querying, middleware, `population`
+  - Company using - Ebay, Uber, Metlife, pathao
+  - Mongoose with TS steps - `Interface → Schema → Model → Database Query`
+- **6-2: Install express , typescript, mongoose , ts-node-dev**
+  - mongodb community server - create local server. download & install.
+  - version check - `mongose --v`
+  - GUI view data - compass install
+  - connect compass
+  - `npm —init` & Install express mongoose
+  - `tsc —init` & Install typescript & ts-node-dev as dev dependency on project - `npm i typescript --save-dev` & also `npm i ts-node-dev --save-dev`
+  - script dev - `"dev": "ts-node-dev --respawn --transpile-only src/server.ts",`
+  - server setup and mongoose connect
+- **6-3: How to organize your code alittle more . install and implement types**
+  - app listen into mongodb connection
+  - Import syntax use from es2015
+  - cors install & import & use
+  - Divide file & create app.ts. express, app, cors shift into app.ts.
+  - Install `npm i —save-dev @types/cors` & `npm i —save-dev @types/express`
+  - Export app & use into server
+  - Check root route working or not
+  - Import type from express & Declare app type Application, req type Request, res type Response, next type NextFunction, port type number
+- **6-4: How To relate Interface and schema**
+  - parse data by express.json() & express.urlencoded({true})
+  - Step - Interface, Schema, Model, Database query
+  - Create Interface. type, string, enum, object. Here type start with Lowercase
+  - Create Schema following generic Interface & type check, required. Here type start with Uppercase
+  - Keep in mind - Developer is responsible for ensuring document interface is line up with mongoose schema. Mongoose won’t report an error if email is required in your mongoose schema.
+- **6-5: Create Model using Interface , Schema and Insert Data**
+  - Model creation - model<generic>(’Name’, SchemaName)
+  - create data instance by following interface with generics
+  - use async await call mongoose method then save data into db
+  - request method hit - save the data to db will occure
+  - keep eye on unique data checking otherwise give error. So to keep data into mongodb database must follow schema.
+- **6-6: How to organize your structure , MVC vs Modular**
+  - Separate code - MVC pattern vs Modular pattern. Modular more popular nowadays
+  - MVC have - model, view, controller, routes, utils, interface. But as seperate all change one is prettry hassel
+  - Modulare have - app → modules → role → (interfac, model, route, controller, utils)
+  - Separate interface, model, route, db query function from previous code. app from method call will make the app huge so separate by route
+- **6-7: More Refactoring, Test api to insert data**
+  - Separate service & import model to service
+  - Separate route
+  - Separate controller. call service from controller. return service response to controller & response contoller
+  - app.use() from call specific route
+- **6-8: Create and Test Post Route , Refactor Code**
+  - route → controller → service
+  - route, controller, services will be same place for specific modules
+  - get data by - .find()
+  - post data by - data.save()
+  - service return type -Promise<InterfaceName>
+- **6-9: Find , FindOne , Field Filtering**
+  - findONe - findOne({id: payload}). return type Promise<IUser | null>. controller gets payload = req.params
+  - field filtering methodology / get specific field - findOne({id: payload}, {name:1})
+- **6-10: What is instance methods ,built custom instance method**
+  - create interface, create method
+  - change Schema generic type - <Interface, Model, Method>
+  - Schema method define
+  - Model create on schema & generic type <Interface, Model>
+  - create new instance & access instance method
+  - static method use by calling directly from class or model
+- **6-11: What is statics ,built custom static method**
+  - create schema static method & define method actions. this will be async await function
+  - interface create & declare static method extending model & schema generic type as use
+  - static method now useable
+  - service, controller, route make ready
+  - dynamic route will be at last of same types of all routes. others wise other route will not work

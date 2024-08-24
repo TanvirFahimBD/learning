@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        background: lightgreen;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body style="width: 600px">
+    <h1>jQuery FadeIn FadeOut method</h1>
+
+    <div id="box">
+      <h2>Test Box</h2>
+      <p>
+        Lorem ipsum dolor, sit <span> amet consectetur adipisicing</span> elit.
+        Magni, beatae!
+      </p>
+    </div>
+
+    <button id="fadeOutBtn">fadeOut</button>
+    <button id="fadeInBtn">fadeIn</button>
+    <button id="fadeToggleBtn">fadeToggle</button>
+    <button id="fadeToBtn">fadeTo</button>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#fadeOutBtn").click(function () {
+          $("#box").fadeOut(3000, function () {
+            console.log("hide");
+          });
+        });
+
+        $("#fadeInBtn").click(function () {
+          $("#box").fadeIn(3000, function () {
+            console.log("show");
+          });
+        });
+
+        $("#fadeToggleBtn").click(function () {
+          $("#box").fadeToggle(3000, function () {
+            console.log("fade Toggle");
+          });
+        });
+
+        $("#fadeToBtn").click(function () {
+          $("#box").fadeTo(3000, 0.2, function () {
+            console.log("fade To");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

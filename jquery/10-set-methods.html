@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        background: pink;
+        padding: 10px;
+        border: 1px solid red;
+      }
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery SET Methods</h1>
+
+    <!-- <div id="box" class="test">
+      <h2>Test Box</h2>
+      <p>
+        Lorem ipsum <span> dolor sit </span>, amet cawd cumque optio ipsum amet?
+      </p>
+    </div>
+    <button id="clickbutton">Set Value</button> -->
+
+    <form action="" id="sform">
+      <label for="">Name</label>
+      <input type="text" id="sname" /> <br />
+      <label for="">Class</label>
+      <input type="text" id="sclass" /> <br />
+      <input type="submit" value="submit" />
+    </form>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // $("#clickbutton").click(function () {
+        //   $("#box h2").text("Hello Tanvir");
+        //   $("#box p").html("New <b> Demo text </b> for");
+        //   $("#box h2").attr("class", "red");
+        // });
+
+        $("#sform").submit(function (event) {
+          event.preventDefault();
+          $("#sname").val("tanvir");
+          $("#sclass").val("new Class");
+        });
+      });
+    </script>
+  </body>
+</html>

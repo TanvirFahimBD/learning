@@ -1,0 +1,4 @@
+1. singleton
+2. factory
+3. creational(all)
+4. 

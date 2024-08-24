@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JQuery</title>
+  </head>
+  <body>
+    <h1>jQuery Syntax</h1>
+    <div id="test1">
+      <h1>test1</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
+        molestiae!
+      </p>
+    </div>
+
+    <div id="test2">
+      <h1>test2</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
+        molestiae!
+      </p>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var a = $("#test1").html();
+        var b = $("#test2").html();
+        console.log(a);
+        console.log(b);
+      });
+    </script>
+  </body>
+</html>

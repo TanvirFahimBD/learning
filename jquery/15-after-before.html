@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        background: lightgreen;
+        padding: 10px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery After Before</h1>
+
+    <div id="box">
+      <h2>Test Box</h2>
+      <p>
+        Lorem ipsum <span> dolor sit </span>, amet cawd cumque optio ipsum amet?
+      </p>
+    </div>
+    <button id="afterBtn">after</button>
+    <button id="beforeBtn">before</button>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#afterBtn").click(function () {
+          $("#box").after("<h2>Tanvir</h2>");
+        });
+
+        $("#beforeBtn").click(function () {
+          $("#box").before("<h2>Tanvir2</h2>");
+        });
+      });
+    </script>
+  </body>
+</html>

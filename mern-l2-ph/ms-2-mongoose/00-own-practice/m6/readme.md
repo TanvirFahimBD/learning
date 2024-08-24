@@ -1,0 +1,4 @@
+- **5_5 1: What is module ,different formats of module technique, import and export**
+  - type alias - same file in ts shows error to remove name conflict in ts type alias is used. using a function on another function name can be changed by as is type alias
+  - commonjs - `export.functionName = functionName;`
+  - es6 - tsconfig.json file module change transpile file import export format.

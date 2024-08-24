@@ -1,0 +1,10 @@
+Telnet Install: dism /online /Enable-Feature /FeatureName:TelnetClient
+Putty Link: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+Server Command --> 
+1. go build -o server.exe
+2. server.exe
+
+
+Telnet Command -->
+1.telnet localhost 8888

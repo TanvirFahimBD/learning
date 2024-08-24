@@ -1,0 +1,22 @@
+Here are the terms and conditions for Phase 1 (READ IT):
+
+1. You know basic C/C++ including variables, data types, operators, conditions, functions and loops.
+2. You are willing to spend at least 20 hours per week in CP.
+3. You have to participate in all major online contests on Codeforces, Atcoder and Codechef.
+4. On each Friday and Monday there will be a class from 06:00 pm to 08:00 pm. I will start the class within 06:05 pm no matter you join or not.
+5. The first class is on November 15, 2021.
+6. I will use Google Meet or Zoom to conduct the classes.
+7. You will be invited via email to the classes. I will remind you on discord too.
+8. The classes will be recorded and provided after the class.
+9. I will provide a short written summary of the classes and resource links of the topics after the classes.
+10. You can't share the recordings or the summaries with anyone until I permit you to do so.
+11. You have to attend at least 4 classes.
+12. There will be a 1-week-long practice contest after every class and you have to participate in it.
+13. If a contest contains n problems, then you have to solve at least n - 2 problems. Normally a contest will have at least 10 problems.
+14. You have to pay 4069 BDT via bKash or Rocket within November 13, 2021.
+15. If you don't follow at least one of the conditions mentioned above, then you
+ are giving me the right to disqualify you unless you have a very good reason.
+
+It will take 2-3 days to provide you with a confirmation of whether you are successfully enrolled or not by checking everything. I will give a role named "phase 1" on the discord server if you get enrolled and then you will be able to see a hidden category on the discord server named "PHASE 1". If you don't see this even after 3 days of your payment, then contact me.
+
+I will share a google form tomorrow. Alos, check

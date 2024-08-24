@@ -1,0 +1,15 @@
+Assume that all required HTML elements are present in the webpage. Answer the following questions based on the given CSS code:
+
+ 
+
+a) Which value of --primary-color will be applied to the <body> element?
+
+b) If a <p> element is a child of a <div> element, which value of --primary-color will be applied to the <p> element?
+
+c) How can you ensure that the value of --primary-color from the :root selector is applied to the <p> element?
+
+ a) --primary-color: blue;
+ b) --primary-color: green;
+ c) p {
+    --primary-color: inherit;
+    }

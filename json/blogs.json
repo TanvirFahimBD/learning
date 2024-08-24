@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "63482ede5b38f649a30875a9",
+    "img": "https://i.ibb.co/bQywG28/course-12.jpg",
+    "question": "What is semantic tag in html?",
+    "answer": "Semantic HTML elements are those that clearly describe their meaning in a human- and machine-readable way. Elements such as <header> , <footer> and <article> are all considered semantic because they accurately describe the purpose of the element and the type of content that is inside them.\r\n"
+  },
+  {
+    "_id": "63482eded140183b19352748",
+    "img": "https://i.ibb.co/KVssDDy/course-2.jpg",
+    "question": "Difference between block, inline and inline-block element in css?\r\n",
+    "answer": "display block brings on different line display inline brings on the same line==>but this does not let the height, Margin top and bottom. padding top and bottom to e individually set for each element. So, here comes display:inline-block.display:inline-block lets your bring everything to inline and also define their individual height, margin top and bottom and padding-top and bottom.\r\n"
+  },
+  {
+    "_id": "63482edebb037b8f11b07f30",
+    "img": "https://i.ibb.co/X8hMNz4/course-14.jpg",
+    "question": "What is the purpose of context api in react?\r\n",
+    "answer": "The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to prop drilling or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.\r\n"
+  }
+]

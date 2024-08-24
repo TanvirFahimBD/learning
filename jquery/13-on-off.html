@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        padding: 10px;
+        border: 1px solid red;
+      }
+      .boxbg {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery ON OFF</h1>
+
+    <div id="box">
+      <h2>Test Box</h2>
+      <p>
+        Lorem ipsum <span> dolor sit </span>, amet cawd cumque optio ipsum amet?
+      </p>
+    </div>
+    <button id="button">Off Style</button>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // $("#box").on("mouseover mouseout", function () {
+        //   $(this).toggleClass("boxbg");
+        // });
+        $("#box").on({
+          click: function () {
+            $(this).css("background-color", "orange");
+          },
+          mouseover: function () {
+            $(this).css("background-color", "pink");
+          },
+          mouseout: function () {
+            $(this).css("background-color", "lightblue");
+          },
+        });
+        $("#button").click(function () {
+          $("#box").off("mouseover mouseout");
+        });
+      });
+    </script>
+  </body>
+</html>

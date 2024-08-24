@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        background: lightgreen;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery filtering methods</h1>
+
+    <div id="first">
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <ul>
+      <li>Orange</li>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Grapes</li>
+    </ul>
+    <div id="second">
+      <p class="test">Lorem ipsum dolor sit amet consectetur.</p>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("p").slice(0, 3).css("background", "pink");
+      });
+    </script>
+  </body>
+</html>

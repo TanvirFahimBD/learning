@@ -1,0 +1,25 @@
+- **5_5 1: What is module ,different formats of module technique, import and export**
+
+  - type alias - same file in ts shows error to remove name conflict in ts type alias is used. using a function on another function name can be changed by as is type alias
+  - commonjs - `export.functionName = functionName;`
+  - es6 - tsconfig.json file module change transpile file import export format.
+
+- **5-5.2: Different types Import and export statement**
+  - wild card import - all export. `import * as Name from ‘.’`
+  - default export - export default variableName. during defualt export file import file name is changeable. default export can be all pass into a single object and import use like object properties
+  - normal export - export const variableName.
+  - re export methodology - single file import others all file then export default from one & use like object properties
+- **5_5 3: Know About utility Types**
+  - Pick type - take. `Pick<InterfaceName, InterfaceProperties using union>`
+  - Omit type - Remove. `Omit<InterfaceName, InterfaceProperties using union>`
+  - Partial type- Optional some. `Partial<InterfaceName>`
+  - Required type - Make Required. `Required<InterfaceName>`
+  - Make readonly property - easily make all property readonly during type declare. `Readonly<InterfaceName>`
+  - Using index signature - `[key: string]: string;`
+  - Record type - `Record<string,string>` Property declare `Record<'a'|'b'|'c',string>`
+- **5_5 4: How to use multiple interface as a type and create a model for a class**
+  - class → props & methods → interface & interface → type model → class implements
+  - property as interface
+  - method as interface
+  - model type as generic interface
+  - class implements that model. Interface use during property & method declare. Use properties & methods.

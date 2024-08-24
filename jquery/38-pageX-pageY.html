@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        background: lightgreen;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #000;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery pageX pageY Property</h1>
+
+    <div id="result"></div>
+    <div id="box"></div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document).mousemove(function (event) {
+          $("#result").text("X: " + event.pageX + ", Y: " + event.pageY);
+
+          var x = event.pageX;
+          var y = event.pageY;
+          $("#box").offset({ left: x, top: y });
+        });
+      });
+    </script>
+  </body>
+</html>

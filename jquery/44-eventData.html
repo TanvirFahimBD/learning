@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        background: lightgreen;
+        padding: 10px;
+        margin: 30px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery event.stopPropagation() Method</h1>
+
+    <div id="box">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, illo!
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, illo!
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, illo!
+      </p>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("p").each(function (i) {
+          $(this).on("click", { value: i }, function (event) {
+            alert(event.data.value);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

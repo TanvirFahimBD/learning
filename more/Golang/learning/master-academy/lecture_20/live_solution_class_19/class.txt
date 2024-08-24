@@ -1,0 +1,17 @@
+MYSQL			COUCHBASE
+-----			----------
+Database		Bucket
+Table			none/type
+Row			Document
+3306			8093
+Datacapacity:unknown	max(20 MB)
+
+Default Port -->
+Mysql - 3306
+Couchbase - 8093(Web Interface-8091)
+
+REST API -->
+REST - Representational state transfer
+API - Application Programming Interface
+
+http://localhost:8093/query/service

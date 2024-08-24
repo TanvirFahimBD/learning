@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn jQuery</title>
+    <style>
+      #box {
+        background: lightgreen;
+        padding: 10px;
+        border: 1px solid #000;
+      }
+      #test {
+        background: pink;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery wrap unwrap</h1>
+
+    <div id="box">
+      <h2>Test Box</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, ipsa.
+      </p>
+    </div>
+    <button id="wrapBtn">wrap</button>
+    <button id="unwrapBtn">unwrap</button>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#wrapBtn").click(function () {
+          $("#box p").wrap("<h2 id='test'></h2>");
+        });
+
+        $("#unwrapBtn").click(function () {
+          $("#box p").unwrap();
+        });
+      });
+    </script>
+  </body>
+</html>

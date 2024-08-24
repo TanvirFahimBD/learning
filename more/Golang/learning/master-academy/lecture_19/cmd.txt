@@ -1,0 +1,3 @@
+DataBase UserName or reset-mysql-password CMD: 
+1. mysqladmin --user=root password "vFgK12B2h1"
+2. mysql --user=root --password=vFgK12B2h1 -e "SELECT 1+1"

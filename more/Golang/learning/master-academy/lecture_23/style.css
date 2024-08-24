@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  opacity: 0.85;
+}
+
+.start-btn {
+  background-color: #7856ff;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+header {
+  background-color: #212121;
+  color: white;
+  padding: 10px 5em;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+header .wrap {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+header .menus {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+}
+header .btn-part {
+  justify-self: end;
+}
+header .btn-part div {
+  display: inline;
+}
+header .btn-part login-btn {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+header .btn-part .signup-btn {
+  background-color: #51cfdb;
+  color: black;
+  font-size: 16px;
+}
+section.one {
+  padding-top: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+}
+.one .left-part {
+  width: 60%;
+  padding: 3em 0 0 8em;
+}
+.one .left-part * {
+  margin: 10px 0;
+}
+.head-text h1 {
+  line-height: 1em;
+  letter-spacing: -0.05em;
+}
+.one .right-part .img {
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/images/danial-igdery-FCHlYvR5gJI-unsplash.jpg);
+  background-position: center;
+  background-position-x: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.two {
+  background-color: #ededed;
+  text-align: center;
+}
+.two .logo-img {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0 8em;
+  justify-items: center;
+}
+.two .logo-img > div {
+  width: 120px;
+  height: 120px;
+}
+.two .logo-img img {
+  width: 100%;
+  height: 100%;
+}
+.two .partner h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #383838;
+  padding-bottom: 10px;
+}
+.three {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-gap: 1em;
+}
+.three .bg-img {
+  width: 100%;
+  height: 400px;
+  background-image: url(./assets/images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.three .right-part {
+  padding: 4em 4em 0 2em;
+}
+.three .right-part * {
+  margin: 15px;
+}
+.three .explore {
+  border: 1px;
+  border-style: solid;
+  border-color: #7856ff;
+  background-color: transparent;
+  color: #7856ff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.four .bg-img {
+  height: 550px;
+  background-image: url(./assets/images/laptop-3174729_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.four .bg-img .overlay {
+  height: 550px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: relative;
+}
+.four .wrap {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.four .wrap * {
+  margin: 15px 0;
+}
+.four .wrap .start-btn {
+  background-color: white;
+  color: #7856ff;
+}
+footer {
+  background-color: #212121;
+  padding: 3em 5em;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+footer .part-one {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+footer .part-one .left-part {
+  margin: 0 1em;
+  position: relative;
+}
+footer .part-one .left-part .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer .part-one .right-part {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+footer .part-one .right-part * {
+  margin: 15px 0;
+}
+
+footer .right-part .head-menu p {
+  color: rgb(255, 255, 255, 0.6);
+  margin: 15px 0;
+}
