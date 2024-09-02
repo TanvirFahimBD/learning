@@ -73,7 +73,8 @@ const greetFriends = (
   greetFriends("tanvir", "hosssain", "fahim");
   
   
-const greetFriends1 = (...friends: string[]): void => friends.forEach((friend) => console.log(` Hi ${friend}`));
+  const greetFriends1 = (...friends: string[]): void =>
+    friends.forEach((friend) => console.log(` Hi ${friend}`));
   
   greetFriends1(
     "tanvir hosssain fahim",
@@ -94,8 +95,8 @@ const greetFriends1 = (...friends: string[]): void => friends.forEach((friend) =
  */
   
 const newFriends23 = ["fahim", "tanim"];
-const [singleFriend] = newFriends23;
-console.log(singleFriend);
+const [singleFriend, singFd2] = newFriends23;
+console.log('arr des', singleFriend, singFd2);
 
 const myBestBro = {
   nickName: "anik",
@@ -104,7 +105,7 @@ const myBestBro = {
 const { nickName } = myBestBro;
 console.log({ nickName });
 
-const { nickName: string } = myBestBro;
-console.log({ string });
+const { nickName: newName } = myBestBro;
+console.log({ newName });
   
 }
