@@ -52,20 +52,61 @@ int main()
     // printf("Negative: %d\n", negCnt);
 
     // * 6.5- Break Statement
-    for (int i = 1; i <= 10; i++)
+    // for (int i = 1; i <= 10; i++)
+    // {
+    //     printf("%d\n", i);
+
+    //     printf("Line 1\n");
+    //     printf("Line 2\n");
+
+    //     if (i == 5)
+    //     {
+    //         break;
+    //     }
+
+    //     printf("Line 3\n");
+    //     printf("Line 4\n");
+    // }
+
+    // * 6.6 - Continue Statement
+    // for (int i = 1; i <= 10; i++)
+    // {
+    //     printf("%d\n", i);
+
+    //     printf("Line 1\n");
+    //     printf("Line 2\n");
+
+    //     if (i == 5)
+    //     {
+    //         continue;
+    //     }
+
+    //     printf("Line 3\n");
+    //     printf("Line 4\n");
+    // }
+
+    // * 6.7 - Digits
+    int t;
+    scanf("%d", &t);
+    for (int i = 0; i < t; i++)
     {
-        printf("%d\n", i);
+        int n;
+        scanf("%d", &n);
 
-        printf("Line 1\n");
-        printf("Line 2\n");
-
-        if (i == 5)
+        if (n == 0)
         {
-            break;
+            printf("0");
         }
 
-        printf("Line 3\n");
-        printf("Line 4\n");
+        while (n > 0)
+        {
+            int digit = n % 10;
+            printf("%d ", digit);
+
+            n /= 10;
+        }
+
+        printf("\n");
     }
 
     return 0;
