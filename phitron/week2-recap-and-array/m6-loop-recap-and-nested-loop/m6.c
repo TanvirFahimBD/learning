@@ -86,24 +86,114 @@ int main()
     // }
 
     // * 6.7 - Digits
-    int t;
-    scanf("%d", &t);
-    for (int i = 0; i < t; i++)
+    // int t;
+    // scanf("%d", &t);
+    // for (int i = 0; i < t; i++)
+    // {
+    //     int n;
+    //     scanf("%d", &n);
+
+    //     if (n == 0)
+    //     {
+    //         printf("0");
+    //     }
+
+    //     while (n > 0)
+    //     {
+    //         int digit = n % 10;
+    //         printf("%d ", digit);
+
+    //         n /= 10;
+    //     }
+
+    //     printf("\n");
+    // }
+
+    // * 6.8 - Pattern
+
+    // for (int i = 1; i <= 7; i++)
+    // {
+    //     for (int j = 1; j <= i; j++)
+    //     {
+    //         printf("%d ", j);
+    //     }
+    //     printf("\n");
+    // }
+
+    // for (int i = 1; i <= 7; i++)
+    // {
+    //     for (int j = i; j >= 1; j--)
+    //     {
+    //         printf("%d ", j);
+    //     }
+    //     printf("\n");
+    // }
+
+    // for (int i = 1; i <= 7; i++)
+    // {
+    //     for (int j = 7 - i; j >= 1; j--)
+    //     {
+    //         printf(" ");
+    //     }
+
+    //     for (int j = 1; j <= i; j++)
+    //     {
+    //         printf("%d", j);
+    //     }
+
+    //     printf("\n");
+    // }
+
+    // for (int i = 1; i <= 7; i++)
+    // {
+    //     for (int j = 7 - i; j >= 1; j--)
+    //     {
+    //         printf(" ");
+    //     }
+
+    //     for (int j = 1; j <= i; j++)
+    //     {
+    //         printf("%d ", j);
+    //     }
+
+    //     printf("\n");
+    // }
+
+    // for (int i = 7; i >= 1; i--)
+    // {
+    //     for (int j = 1; j <= i; j++)
+    //     {
+    //         printf("%d ", j);
+    //     }
+
+    //     printf("\n");
+    // }
+
+    // for (int i = 7; i >= 1; i--)
+    // {
+    //     for (int j = i; j >= 1; j--)
+    //     {
+    //         printf("%d ", j);
+    //     }
+
+    //     printf("\n");
+    // }
+
+    for (int i = 1; i <= 5; i++)
     {
-        int n;
-        scanf("%d", &n);
-
-        if (n == 0)
+        if (i > 3)
         {
-            printf("0");
+            for (int j = 1; j <= (5 - i + 1); j++)
+            {
+                printf("%d ", j);
+            }
         }
-
-        while (n > 0)
+        else
         {
-            int digit = n % 10;
-            printf("%d ", digit);
-
-            n /= 10;
+            for (int j = 1; j <= i; j++)
+            {
+                printf("%d ", j);
+            }
         }
 
         printf("\n");
