@@ -231,31 +231,136 @@ int main()
 
     //* R. Sequence of Numbers and Sum
     //* https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/R
-    int start, end, sum;
+    // int start, end, sum;
 
-    while (scanf("%d%d", &start, &end) != EOF)
+    // while (scanf("%d%d", &start, &end) != EOF)
+    // {
+    //     if (start <= 0 || end <= 0)
+    //     {
+    //         break;
+    //     }
+
+    //     if (start > end)
+    //     {
+    //         int temp = start;
+    //         start = end;
+    //         end = temp;
+    //     }
+
+    //     sum = 0;
+
+    //     for (; start <= end; start++)
+    //     {
+    //         sum += start;
+    //         printf("%d ", start);
+    //     }
+
+    //     printf("sum =%d\n", sum);
+    // }
+
+    // return 0;
+
+    //* J. Lucky Array
+    //* https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/J
+    // int n, min, count = 0;
+    // scanf("%d", &n);
+    // int a[n];
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     scanf("%d", &a[i]);
+    // }
+
+    // min = a[0];
+    // for (int i = 1; i < n; i++)
+    // {
+    //     if (min > a[i])
+    //     {
+    //         min = a[i];
+    //     }
+    // }
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (a[i] == min)
+    //     {
+    //         count++;
+    //     }
+    // }
+
+    // if (count % 2 == 1)
+    // {
+    //     printf("Lucky\n");
+    // }
+    // else
+    // {
+    //     printf("Unlucky\n");
+    // }
+
+    // return 0;
+
+    //* D. Positions in array
+    //* https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/D
+    // int n;
+    // scanf("%d", &n);
+    // int a[n];
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     scanf("%d", &a[i]);
+    // }
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (a[i] <= 10)
+    //     {
+    //         printf("A[%d] = %d\n", i, a[i]);
+    //     }
+    // }
+
+    // return 0;
+
+    //* M. Replace MinMax
+    //* https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/M
+    int n, min, max;
+    scanf("%d", &n);
+    int a[n];
+
+    for (int i = 0; i < n; i++)
     {
-        if (start <= 0 || end <= 0)
+        scanf("%d", &a[i]);
+    }
+
+    min = a[0];
+    max = a[0];
+    for (int i = 0; i < n; i++)
+    {
+        if (a[i] < min)
         {
-            break;
+            min = a[i];
         }
 
-        if (start > end)
+        if (a[i] > max)
         {
-            int temp = start;
-            start = end;
-            end = temp;
+            max = a[i];
         }
+    }
 
-        sum = 0;
-
-        for (; start <= end; start++)
+    for (int i = 0; i < n; i++)
+    {
+        if (a[i] == min)
         {
-            sum += start;
-            printf("%d ", start);
+            a[i] = max;
         }
+        else if (a[i] == max)
+        {
+            a[i] = min;
+        }
+    }
 
-        printf("sum =%d\n", sum);
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", a[i]);
     }
 
     return 0;
