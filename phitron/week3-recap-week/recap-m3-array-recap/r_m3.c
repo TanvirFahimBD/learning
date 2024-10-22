@@ -322,46 +322,80 @@ int main()
 
     //* M. Replace MinMax
     //* https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/M
-    int n, min, max;
+    // int n, min, max;
+    // scanf("%d", &n);
+    // int a[n];
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     scanf("%d", &a[i]);
+    // }
+
+    // min = a[0];
+    // max = a[0];
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (a[i] < min)
+    //     {
+    //         min = a[i];
+    //     }
+
+    //     if (a[i] > max)
+    //     {
+    //         max = a[i];
+    //     }
+    // }
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (a[i] == min)
+    //     {
+    //         a[i] = max;
+    //     }
+    //     else if (a[i] == max)
+    //     {
+    //         a[i] = min;
+    //     }
+    // }
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     printf("%d ", a[i]);
+    // }
+
+    // return 0;
+
+    //* F. Reversing
+    //* https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/F
+    // int n;
+    // scanf("%d", &n);
+    // int a[n];
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     scanf("%d", &a[i]);
+    // }
+
+    // for (int i = n - 1; i >= 0; i--)
+    // {
+    //     printf("%d ", a[i]);
+    // }
+
+    // return 0;
+
+    //* R. Age in Days
+    //* https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/R
+    int n, year = 0, month = 0, day = 0;
     scanf("%d", &n);
-    int a[n];
 
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d", &a[i]);
-    }
+    year = n / 365;
+    printf("%d years\n", year);
 
-    min = a[0];
-    max = a[0];
-    for (int i = 0; i < n; i++)
-    {
-        if (a[i] < min)
-        {
-            min = a[i];
-        }
+    month = (n % 365) / 30;
+    printf("%d months\n", month);
 
-        if (a[i] > max)
-        {
-            max = a[i];
-        }
-    }
-
-    for (int i = 0; i < n; i++)
-    {
-        if (a[i] == min)
-        {
-            a[i] = max;
-        }
-        else if (a[i] == max)
-        {
-            a[i] = min;
-        }
-    }
-
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", a[i]);
-    }
+    day = (n % 365) % 30;
+    printf("%d days\n", day);
 
     return 0;
 }
