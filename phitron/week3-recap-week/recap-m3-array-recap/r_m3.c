@@ -385,17 +385,60 @@ int main()
 
     //* R. Age in Days
     //* https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/R
-    int n, year = 0, month = 0, day = 0;
-    scanf("%d", &n);
+    // int n, year = 0, month = 0, day = 0;
+    // scanf("%d", &n);
 
-    year = n / 365;
-    printf("%d years\n", year);
+    // year = n / 365;
+    // printf("%d years\n", year);
 
-    month = (n % 365) / 30;
-    printf("%d months\n", month);
+    // month = (n % 365) / 30;
+    // printf("%d months\n", month);
 
-    day = (n % 365) % 30;
-    printf("%d days\n", day);
+    // day = (n % 365) % 30;
+    // printf("%d days\n", day);
+
+    // return 0;
+
+    //* 3.5 Extra Problem Set For Practice
+    //* https://docs.google.com/document/d/1wyXv1Iqx1W21n2HAoOM1yC5VMEOewKveA8O_Q1CliSo/edit?tab=t.0
+    //* Frequency Arrays
+    int n, m;
+    scanf("%d%d", &n, &m);
+    int a[n], a2[m + 1];
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    for (int i = 1; i <= m; i++)
+    {
+        a2[i] = 0;
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        int j = a[i];
+        a2[j] = a2[j] + 1;
+    }
+
+    for (int i = 1; i <= m; i++)
+    {
+        printf("%d\n", a2[i]);
+    }
 
     return 0;
+
+    //* Sum Digits
+    // int n, rem = 0, sum = 0;
+    // scanf("%d\n", &n);
+
+    // while (n > 0)
+    // {
+    //     rem = n % 10;
+    //     sum += rem;
+    //     n /= 10;
+    // }
+    // printf("%d\n", sum);
+    // return 0;
 }
