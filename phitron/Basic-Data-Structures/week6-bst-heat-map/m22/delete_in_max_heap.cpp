@@ -45,8 +45,6 @@ void delete_heap(vector<int> &v){
             break;
         }
     }
-
-   
 }
 
 void print_heap(vector<int> v){
